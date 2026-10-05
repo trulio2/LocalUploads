@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "yarn@1.22.22",
   "scripts": {
-    "install:all": "yarn --cwd nest install && yarn --cwd react install",
+    "i": "yarn && yarn --cwd nest install && yarn --cwd react install",
     "build": "yarn --cwd nest build && yarn --cwd react build",
     "serve": "yarn build && yarn --cwd nest start:prod",
     "start": "concurrently -n nest,react -c blue,green \"yarn --cwd nest start:dev\" \"yarn --cwd react dev\""
